@@ -1,0 +1,805 @@
+/*NEW*/
+
+html {
+    font-size: 16px;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+
+}
+
+body {
+    background: rgba(0, 0, 0, 0.932);
+    color: white;
+    font-family: "Codystar", "Georgia", "Times New Roman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Affects the appearance of the landing page: Linda ... Software */
+.dot-style {
+    font-family: "Codystar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Landing Page*/
+.landing-page {
+    text-align: center;
+    height: 700px;
+}
+
+#name {
+    font-size: 6.25rem;
+    position: relative;
+    top: 50px;
+}
+
+#identity {
+    font-size: 3.125rem;
+    position: relative;
+    top: 5px;
+    letter-spacing: 4px;
+}
+
+/* For the header navigations: home, contact, etc.*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 5px;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    font-family: "Codystar", sans-serif;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 12px;
+    border: 2px dotted white;
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+nav a:hover {
+    border: 2px solid white;
+}
+
+nav a:active {
+    border: 2px solid white;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* End of the navigation bar*/
+
+
+/* For the scroll down button */
+.scroll-down-circle {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px dotted white;
+    border-radius: 50%;
+    justify-self: center;
+    position: relative;
+    top: 80px;
+}
+/* End of the scroll down button*/
+
+/* For the HEY word */
+#hey {
+    text-align: center;
+    font-size: 100px;
+    margin-top:0;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+/* Brief intro about me  */
+.linda-container {
+    display: flex;
+    background: #1d1d1d;
+    max-height: 700px;
+    width: 100%;
+}
+
+.image-caption {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+
+}
+.lindag-image {
+    height: 500px;
+    width: 100%;
+    width: 400px;
+    border-radius: 20px
+}
+
+.brief-intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 25px 10px 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.image-description {
+    text-align: center;
+}
+/* End of brief intro of me*/
+
+
+/* For section headers and page headers */
+.dot-headers {
+    font-family: "Codystar", serif;
+    font-size: 50px;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+}
+
+/*New Q & A Code*/
+section.q-and-a {
+    padding: 10px 30px;
+    font-family: "Playfair Display", serif;
+    width: 1000px;
+}
+
+.question-shape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 40px;
+    width: 500px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    cursor: pointer; /* TESTING */
+}
+
+.answer-shape {
+    display: none; /* TESTING */
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px dotted white;
+    padding: 5px 10px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+
+.circle {
+    display: flex;
+    width: 30px;
+    margin-left: 10px;
+}
+
+/*End of Q & A Section*/
+
+
+/*Footer*/
+footer {
+    position: relative;
+    top: 20px; /* To give remove from the content and the top of the footer */
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    padding: 10px 5px;
+    background: #1b1b1b;
+    color: white;
+    width: 100%;
+    clear: both;
+}
+
+
+
+/* Projects Page Styling*/
+.projects {
+    padding: 0 100px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    font-family: "CodyStar", sans-serif;
+}
+
+.project-container {
+    display: inline-flex;
+    border: 2px dotted white;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0;
+}
+
+.label {
+    font-size: 60px;
+}
+
+a.explore-button {
+    border-top: 2px dotted white;
+    width: 100%;
+    height: auto;
+    font-size:30px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+a.explore-button:visited {
+    color: lightsteelblue;
+    text-decoration: none;  
+}
+
+a.explore-button:hover {
+    font-size: 31px;
+}
+
+.explore-button:active {
+    font-size: 31px;
+    color: rgb(188, 188, 188);
+}
+
+
+/*END OF THE PROJECT'S PAGE*/
+
+/* Styling for Contact Page */
+.socials, .contact-form {
+    padding: 0px 30px 20px;
+}
+
+/* For the social links */
+.linkedin-icon {
+    color: white;
+    transition: color 0.3s;
+}
+
+div.li {
+    display: inline-flex;
+    flex-direction: column; /* Stack children vertically */
+    border: 2px dotted white;
+    border-radius: 12px;
+    padding: 15px;
+    align-items: flex-start;    /* Center items horizontally */
+    width: 25%;
+    justify-content: center;
+}
+
+.icon {
+    height: 30px;
+}
+
+/* End of the social links*/
+
+/* For the contact form*/
+
+.contact-title {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px dotted white;
+    width: 100%;
+}
+.contact-design {
+    font-family: "CodyStar", sans-serif;
+    font-size: 18px;
+    border: 2px dotted white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin: 3px 0;
+}
+
+input, textarea {
+    width: 100%;
+    color: white;
+    background: black;
+    margin: 3px 0;
+}
+
+.submitButton {
+    margin: 5px auto;
+    border-radius: 12px;
+    padding: 5px;
+    border: 2px dotted white;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background: hsl(210, 5%, 50%);
+}
+
+.submitButton:active {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* End of the contact form */
+
+/*Styling for the HTML/CSS PAGE*/
+.project-demos {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 50px;
+}
+
+.project-box {
+    font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
+    padding: 10px; /*Changes the space around the content inside of the projects*/
+    margin: 10px; /*Changes the space around the boxes*/
+    height: 400px; /*Changes the height of the demo containers*/
+    width: 350px;
+    display: inline-flex;
+    justify-content: space-between; /*Changes the spacing between title, summary, etc.*/
+    flex-direction: column;
+    border: 5px dotted white;
+
+}
+
+.demo-thumbnail {
+    width: 100%;
+}
+
+.top-half {
+    border-bottom: 3px dotted white;
+}
+
+.bottom-half {
+    height: 60%;
+}
+
+.view-more {
+    display: flex;
+    justify-content: center;
+    border: 2px dotted white;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "CodyStar", "Georgia", "Times New Roman", sans-serif;
+}
+
+.view-more:visited {
+    color: lightsteelblue;
+    text-decoration: none;  
+}
+
+.view-more:hover {
+    font-size: 18px;
+}
+
+.view-more:active {
+    font-size: 18px;
+    color: rgb(188, 188, 188);
+    font-weight: 500;
+}
+
+/* End of the project details */
+
+/* FOR PORTFOLIO WEBPAGE*/
+
+.portfolio-info, .summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
+}
+
+.summary-text {
+    text-align: center;
+    font-size: 1rem;
+    width: 75%;
+    letter-spacing: 0.2px;
+}
+
+.preview-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo {
+    width: 60%;
+    border: 2px dotted white;
+    border-radius: 20px;
+}
+
+.demo-link {
+    letter-spacing: 2.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.demo-link:hover {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.demo-link:active{
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* For the programming languages and dates*/
+.info-lines {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 20px 0 50px;
+    font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
+}
+
+.box {
+    border: 2px dotted white;
+    padding: 20px;
+    height: 400px; /*Updated from 250px because it was too small to hold text*/
+    width: 500px;
+    flex-direction: column;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.gallery {
+    padding: 20px;
+    background: #1d1d1d;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.gallery-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  justify-items: center;
+}
+
+
+/* TRYING TO MAKE ZOOM IN FOR PHOTOS*/
+.gallery img {
+    height: 300px;
+    width: 500px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.zoomed-image {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 0 20px #6C6C6C;
+  transform: scale(2);
+  transition: transform 0.2s ease;
+}
+
+
+.details {
+    text-align: center;
+    width: 500px;
+    font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
+}
+
+
+/*For the contact form link */
+.contactLink {
+    letter-spacing: 2.5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.contactLink:hover {
+    color: white;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.contactLink:active{
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.temporary {
+    padding-bottom: 100px;
+}
+
+
+/* Media Quieries for Responsivenesses */
+
+@media only screen and (max-width: 376px) {
+    #name {
+        position: relative;
+        top: 50px;
+        right: 0px;
+        font-size: 2rem;
+    }
+
+    #identity {
+        font-size: 1rem;
+        position: relative;
+        top: 30px;
+        right: 0px;
+    }
+
+    .scroll-down-circle {
+        position: relative;
+        right: 0px;
+    }
+
+   
+    .question-shape {
+        width: 30%;
+        font-size: 0.7rem;
+    }
+
+    .answer-shape {
+        width: 30%;
+        font-size: 0.7rem;
+    }
+
+    #about-me {
+        position: relative;
+        bottom: 250px;
+    }
+
+    .brief-intro {
+        height: auto;
+    }
+   
+    .brief-intro p {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 411px) {
+    #name {
+        position: relative;
+        top: 50px;
+        right: 50px;
+        font-size: 2rem;
+    }
+
+    #identity {
+        font-size: 1rem;
+        position: relative;
+        top: 10px;
+        right: 50px;
+    }
+
+    .scroll-down-circle {
+        position: relative;
+        right: 50px;
+    }
+
+   
+    .question-shape {
+        width: 30%;
+        font-size: 0.7rem;
+    }
+
+    .answer-shape {
+        width: 30%;
+        font-size: 0.7rem;
+    }
+   
+}
+
+@media only screen and (max-width: 453px) {
+    #name {
+        position: relative;
+        top: 50px;
+        right: 50px;
+        font-size: 2.5rem;
+    }
+
+    #identity {
+        font-size: 1.5rem;
+        position: relative;
+        top: 10px;
+        right: 50px;
+    }
+
+    .scroll-down-circle {
+        position: relative;
+        right: 50px;
+    }
+ 
+    .question-shape {
+        width: 35%;
+        font-size: 0.8rem;
+    }
+
+    .answer-shape {
+        width: 35%;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+   
+    #name {
+        font-size: 4rem;
+    }
+
+    #identity {
+        font-size: 1.5rem;
+    }
+   
+    .lindag-image, .image-description {
+        display: none;
+    }
+
+    .image-caption {
+        display: none;
+    }
+
+    .brief-intro {
+        height: auto;
+    }
+    .brief-intro p {
+        font-size: 0.5rem;
+    }
+
+    .question-shape {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+
+    .answer-shape {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 516px) {
+    .lindag-image, .image-description {
+        display: none;
+    }
+
+    .brief-intro {
+        font-size: 0.9rem;
+        padding: 0 20px;
+    }
+   
+    .question-shape {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+
+    .answer-shape {
+        width: 40%;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #name {
+        font-size: 4rem;
+    }
+    #identity {
+        font-size: 1.5rem;
+    }
+    .image-caption {
+        display: none;
+    }
+   
+    .lindag-image, .image-description {
+        display: none;
+    }
+
+    .brief-intro {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+   
+    .question-shape {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .answer-shape {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 634px) {
+    .brief-intro {
+        font-size: 0.8rem;
+        height: 50%;
+    }
+
+    .lindag-image {
+        height: 90%;
+        width: 90%;
+    }
+
+    #name {
+        font-size: 5rem;
+    }
+
+    #identity {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .brief-intro {
+        font-size: 1rem;
+    }
+
+    .lindag-image {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+
+
+@media only screen and (max-width:923px) {
+    .brief-intro {
+        font-size: 1.2rem;
+    }
+
+    .lindag-image {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+.summary-paragraph {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
