@@ -844,5 +844,11 @@ input, textarea {
     }
 }
 
+p.summary-paragraph {
+    white-space: nowrap;           /* Prevents wrapping */
+    overflow: hidden;              /* Hides overflow */
+    text-overflow: ellipsis;       /* Adds the ... */
+    width: 300px;
+}
 
 
