@@ -759,26 +759,41 @@ input, textarea {
         margin-bottom: 10px;
     }
 
+    html {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        display: flex;
+        justify-content:center;
+    }
+    
     .projects {
-        width: 600px;
+        width: 100%;
         overflow: hidden;
     }
 
     .project-container {
-        height: 200px;
-        max-width: 300px;
+        height: 100%;
     }
 
     .label {
         font-size: 1rem;
+        padding: 5%;
     }
     
     a.explore-button {
         font-size: 1rem;
+        padding: 5%;
     }
 
     footer {
-        width: 600px;
+        width: 100%;
     }
 }
 
@@ -832,4 +847,5 @@ input, textarea {
         text-overflow: ellipsis;
     }
 }
+
 
