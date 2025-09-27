@@ -791,6 +791,11 @@ input, textarea {
     footer {
         width: 100%;
     }
+
+    .project-demos {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
 }
 
 @media only screen and (max-width: 634px) {
@@ -850,5 +855,6 @@ p.summary-paragraph {
     text-overflow: ellipsis;       /* Adds the ... */
     width: 300px;
 }
+
 
 
