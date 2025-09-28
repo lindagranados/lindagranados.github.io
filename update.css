@@ -86,8 +86,6 @@ nav a:active {
     border: 2px dotted white;
     border-radius: 50%;
     justify-self: center;
-    position: relative;
-    top: 80px;
 }
 /* End of the scroll down button*/
 
@@ -884,5 +882,6 @@ input, textarea {
         width: 300px;
     }
 }
+
 
 
