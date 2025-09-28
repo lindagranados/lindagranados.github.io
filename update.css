@@ -25,7 +25,6 @@ header.landingPage {
     text-align: center;
     padding: 50px;
     width: 100%;
-    line-height: 2rem;
 }
 
 h1#myName {
@@ -37,6 +36,8 @@ h2#myIdentity {
     font-size: 3.125rem;
     margin: 0;
     padding: 0 20px;
+    position: relative;
+    bottom: 60px;
 }
 
 section#about-me {
@@ -792,7 +793,7 @@ input, textarea {
     h2#myIdentity {
         font-size: 1rem;
         margin: 0;
-        padding: 0 20px;
+        padding-top: 20%;
     }
 
     h1#hey {
@@ -883,4 +884,5 @@ input, textarea {
         width: 300px;
     }
 }
+
 
