@@ -39,7 +39,9 @@ h2#myIdentity {
     padding: 0 20px;
 }
 
-
+section#about-me {
+    padding-top: 20%;
+}
 
 /* For the header navigations: home, contact, etc.*/
 nav {
@@ -98,20 +100,19 @@ nav a:active {
 }
 
 /* Brief intro about me  */
-.linda-container {
-    display: flex;
+section.lindaContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
     background: #1d1d1d;
-    max-height: 700px;
+}
+
+.imageCaption {
     width: 100%;
 }
 
-.image-caption {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    text-align: center;
-
-}
 .lindag-image {
     height: 500px;
     width: 100%;
@@ -119,16 +120,12 @@ nav a:active {
     border-radius: 20px
 }
 
-.brief-intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px 25px 10px 0;
+.briefIntro {
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
 }
 
 .image-description {
@@ -787,16 +784,6 @@ input, textarea {
         display: grid;
         grid-template-columns: repeat(1, 2fr);
     }
-
-    .question-shape, .answer-shape {
-        width: 100%;
-        height:100%;
-    }
-    .landing-page {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-    }
     
     h1#myName {
         font-size: 2rem;
@@ -896,3 +883,4 @@ input, textarea {
         width: 300px;
     }
 }
+
