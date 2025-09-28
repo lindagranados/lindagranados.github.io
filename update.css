@@ -3,7 +3,6 @@
 html {
     font-size: 16px;
     overflow-x: hidden; /* Prevent horizontal scrollbar */
-
 }
 
 body {
@@ -14,7 +13,6 @@ body {
     font-style: normal;
 }
 
-
 /* Affects the appearance of the landing page: Linda ... Software */
 .dot-style {
     font-family: "Codystar", sans-serif;
@@ -23,23 +21,25 @@ body {
 }
 
 /*Landing Page*/
-.landing-page {
+header.landingPage {
     text-align: center;
-    height: 700px;
+    padding: 50px;
+    width: 100%;
+    line-height: 2rem;
 }
 
-#name {
+h1#myName {
     font-size: 6.25rem;
-    position: relative;
-    top: 50px;
+    padding: 0 20px;
 }
 
-#identity {
+h2#myIdentity {
     font-size: 3.125rem;
-    position: relative;
-    top: 5px;
-    letter-spacing: 4px;
+    margin: 0;
+    padding: 0 20px;
 }
+
+
 
 /* For the header navigations: home, contact, etc.*/
 nav {
@@ -73,7 +73,6 @@ nav a:active {
 }
 
 /* End of the navigation bar*/
-
 
 /* For the scroll down button */
 .scroll-down-circle {
@@ -187,7 +186,6 @@ section.q-and-a {
 
 /*End of Q & A Section*/
 
-
 /*Footer*/
 footer {
     position: relative;
@@ -200,8 +198,6 @@ footer {
     width: 100%;
     clear: both;
 }
-
-
 
 /* Projects Page Styling*/
 .projects {
@@ -520,13 +516,11 @@ input, textarea {
   transition: transform 0.2s ease;
 }
 
-
 .details {
     text-align: center;
     width: 500px;
     font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
 }
-
 
 /*For the contact form link */
 .contactLink {
@@ -575,7 +569,6 @@ input, textarea {
         right: 0px;
     }
 
-   
     .question-shape {
         width: 30%;
         font-size: 0.7rem;
@@ -599,7 +592,6 @@ input, textarea {
         font-size: 1rem;
     }
 }
-
 
 @media only screen and (max-width: 411px) {
     #name {
@@ -631,7 +623,6 @@ input, textarea {
         width: 30%;
         font-size: 0.7rem;
     }
-   
 }
 
 @media only screen and (max-width: 453px) {
@@ -666,7 +657,6 @@ input, textarea {
 }
 
 @media only screen and (max-width: 501px) {
-   
     #name {
         font-size: 4rem;
     }
@@ -764,12 +754,13 @@ input, textarea {
         max-width: 600px;
         margin: 0 auto;
     }
+
     nav {
         display: flex;
         justify-content:center;
     }
     
-    .projects, .landing-page, #about-me, .linda-container, section.q-and-a {
+    .projects, main.homeScreen {
         width: 100%;
         overflow: hidden;
     }
@@ -807,41 +798,48 @@ input, textarea {
         flex-direction: column;
     }
     
-    h1#name {
+    h1#myName {
         font-size: 2rem;
-        text-align:center;
-        margin: 0;
-        padding: 0 10%;
-        position: relative;
-        left: 2%;
     }
     
-    h2#identity {
-        font-size: 1.2rem;
-        text-align:center;
-        letter-spacing: 4px;
+    h2#myIdentity {
+        font-size: 1rem;
         margin: 0;
-        position: relative;
-        top: 10%;
-        left: 3%;
+        padding: 0 20px;
     }
-    #hey {
+
+    h1#hey {
+        font-size: 1.5rem; 
         font-size: 3rem;
-    }
-
-    section#about-me {
-        position: relative;
-        bottom: 400px;
-    }
-
-    a#about-me {
-        display: none;
+        padding-top: 60%;
     }
 
     .scroll-down-circle {
         display: none;
     }
+    
+    section.lindaContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imageCaption {
+        display: none;
+    }
+
+    .briefIntro {
+        display: grid;
+        grid-template-columns: 100%;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .question-shape, .answer-shape {
+        width: 35%;
+        height: auto;
+    }
 }
+
 
 @media only screen and (max-width: 634px) {
     .brief-intro {
@@ -875,8 +873,6 @@ input, textarea {
     }
 }
 
-
-
 @media only screen and (max-width:923px) {
     .brief-intro {
         font-size: 1.2rem;
@@ -892,16 +888,11 @@ input, textarea {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    
+    p.summary-paragraph {
+        white-space: nowrap;           /* Prevents wrapping */
+        overflow: hidden;              /* Hides overflow */
+        text-overflow: ellipsis;       /* Adds the ... */
+        width: 300px;
+    }
 }
-
-p.summary-paragraph {
-    white-space: nowrap;           /* Prevents wrapping */
-    overflow: hidden;              /* Hides overflow */
-    text-overflow: ellipsis;       /* Adds the ... */
-    width: 300px;
-}
-
-
-
-
-
