@@ -454,15 +454,29 @@ input, textarea {
     font-family: "Playfair Display", "Georgia", "Times New Roman", sans-serif;
 }
 
+
 .box {
+    height: 200px;          /* fixed height */
+    overflow-y: auto;       /* vertical scroll if needed */
     border: 2px dotted white;
     padding: 20px;
-    height: 400px; /*Updated from 250px because it was too small to hold text*/
     width: 500px;
-    flex-direction: column;
-    margin: 0 10px;
-    text-align: center;
 }
+
+/* Webkit browsers */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background-color: white;  /* scrollbar color */
+    border-radius: 4px;
+}
+
+.box::-webkit-scrollbar-track {
+    background-color: #444;  /* background track */
+}
+
 
 .gallery {
     padding: 20px;
@@ -883,6 +897,7 @@ p.summary-paragraph {
     text-overflow: ellipsis;       /* Adds the ... */
     width: 300px;
 }
+
 
 
 
